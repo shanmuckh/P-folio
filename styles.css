@@ -20,8 +20,6 @@ body {
   background-color: var(--bg-color);
   text-align: center;
   font-family: "Work Sans", sans-serif;
-  /* remove scroll bar and disable scroll */
-  /* overflow: hidden; */
   color: var(--font-color);
 }
 h1,
@@ -54,7 +52,6 @@ ul {
   list-style: none;
 }
 
-/* NAVIGATION */
 nav {
   position: fixed;
   top: 0;
@@ -85,9 +82,6 @@ nav ul li:nth-child(1) {
   margin-right: 2rem;
 }
 
-/* HOME */
-
-/* edit this to center the contents */
 main {
   padding: 0 10vw;
   display: flex;
@@ -106,14 +100,8 @@ main {
   display: flex;
   justify-content: center;
   animation: fadeInUp 1s ease;
-  /* padding-right: 0px;
-  background-color: rgb(64, 68, 105);
-  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
 
-/* .img-container:hover{
-  padding: 5px 5px 5px 50px;
-} */
 .img-container img {
   z-index: 1;
 }
@@ -124,9 +112,7 @@ main {
   position: relative;
 }
 
-/* SOCIAL SVG CONTAINER */
 .social-container {
-  /* transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1); */
   position: absolute;
   top: 0px;
   right: -20px;
@@ -137,12 +123,6 @@ main {
   background-color: var(--bg-color);
 }
 
-/* .social-container:hover{
-  background-color: rgb(64, 68, 105);
-  padding-left: 100px;
-
-} */
-
 main hr {
   display: block;
   height: 1px;
@@ -150,15 +130,11 @@ main hr {
   width: 0;
   border-top: 1px solid #cdced5;
   position: absolute;
-
   bottom: 8px;
-
   animation: slide-in 1s cubic-bezier(0.42, 0, 1, 1) forwards;
 }
 
 .user-bio {
-  /* margin-top: 4rem;
-  margin-bottom: 2rem; */
   opacity: 0;
   animation: fadeInUp 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
 }
@@ -182,8 +158,6 @@ main hr {
   filter: drop-shadow(10px 10px 2px rgba(255, 255, 255, 0.25));
 }
 
-/* Project Styles */
-
 #project {
   padding: 15vh 16px;
 }
@@ -198,8 +172,6 @@ main hr {
   gap: 12px;
   padding-top: 5vh;
 }
-
-/* Per Repo Styles*/
 
 .repository-container {
   border: 1px solid #7b8383;
@@ -222,7 +194,6 @@ main hr {
   font-size: 12px;
 }
 
-/* Repo Head */
 .repository-head {
   display: flex;
   flex-direction: row;
@@ -230,12 +201,10 @@ main hr {
   justify-content: flex-start;
 }
 
-/* Repo Description */
 .repository-description {
   text-align: left;
 }
 
-/* Repo Langauges */
 .repository-language-used-container {
   display: flex;
   flex-direction: row;
@@ -254,8 +223,6 @@ main hr {
   font-weight: 800;
   color: var(--link-color);
 }
-
-/* about */
 
 #about {
   padding-top: 15vh;
@@ -308,11 +275,7 @@ footer {
   padding: 10vh;
 }
 
-/* MEDIA QUERIES */
-
-/* FOR TABLET */
 @media screen and (min-width: 768px) {
-  /* add margin left and rigth make it centered */
   main {
     margin-left: 20%;
     margin-right: 20%;
@@ -325,9 +288,7 @@ footer {
     margin-right: 30%;
   }
 }
-/* FOR DESKTOP */
 @media screen and (min-width: 1025px) {
-  /* project style */
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -339,7 +300,6 @@ footer {
   }
 }
 
-/* KEYFRAMES */
 @keyframes slide-in {
   to {
     width: 115%;
@@ -405,15 +365,9 @@ footer {
   animation: animated_text 10s ease-in-out infinite;
 }
 
-/* must have 1 inner div that wrap all content to work */
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-
-/* .flex-end {
-  align-items: flex-end;
-  padding-bottom: 15vh;
-} */
