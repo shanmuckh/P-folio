@@ -360,6 +360,7 @@ footer {
     var(--text-color-2) 100%
   );
   background-size: 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animated_text 10s ease-in-out infinite;
